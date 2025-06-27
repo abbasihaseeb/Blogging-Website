@@ -16,5 +16,16 @@
     "url": "https://github.com/abbasihaseeb/Blogging-Website/issues"
   },
   "homepage": "https://github.com/abbasihaseeb/Blogging-Website#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "htmlhint": "^1.6.3",
+    "parcel": "^2.15.4",
+    "stylelint": "^16.21.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
+"scripts": {
+  "lint:html": "htmlhint src/**/*.html",
+  "lint:css": "stylelint '**/*.css'",
+  "build": "parcel build src/index.html"
 }
